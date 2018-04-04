@@ -1,0 +1,647 @@
+telepathy-ofono (0.2.20161109-1) UNRELEASED; urgency=medium
+
+  * Non-maintainer upload.
+
+ -- Jonah Brüchert <jbb@kaidan.im>  Wed, 04 Apr 2018 18:03:05 +0200
+
+telepathy-ofono (0.2+17.04.20161109-0ubuntu1) zesty; urgency=medium
+
+  * Group chat fixes.
+
+ -- Gustavo Pichorim Boiko <gustavo.boiko@canonical.com>  Wed, 09 Nov 2016 19:54:03 +0000
+
+telepathy-ofono (0.2+16.10.20160909-0ubuntu1) yakkety; urgency=medium
+
+  * No change rebuild for libphonenumber7
+
+ -- Ken VanDine <ken.vandine@canonical.com>  Fri, 09 Sep 2016 14:10:28 +0000
+
+telepathy-ofono (0.2+16.10.20160719-0ubuntu1) yakkety; urgency=medium
+
+  [ Łukasz 'sil2100' Zemczak ]
+  * Attempt building all telepathy-ofono binaries for arm64 as well.
+
+ -- Łukasz Zemczak <lukasz.zemczak@canonical.com>  Tue, 19 Jul 2016 11:45:24 +0000
+
+telepathy-ofono (0.2+16.04.20160324-0ubuntu1) xenial; urgency=medium
+
+  [ Tiago Salem Herrmann ]
+  * Use accounts service to get the sim names. (LP: #1418040)
+
+ -- Alfonso Sanchez-Beato <alfonso.sanchez-beato@canonical.com>  Thu, 24 Mar 2016 19:50:19 +0000
+
+telepathy-ofono (0.2+16.04.20151120-0ubuntu1) xenial; urgency=medium
+
+  [ Tiago Salem Herrmann ]
+  * Rename mms flag set by telephony-service.
+
+ -- Gustavo Pichorim Boiko <gustavo.boiko@canonical.com>  Fri, 20 Nov 2015 19:59:13 +0000
+
+telepathy-ofono (0.2+16.04.20151110-0ubuntu1) xenial; urgency=medium
+
+  [ CI Train Bot ]
+  * New rebuild forced.
+
+  [ Simon Fels ]
+  * Add support for BlueZ 5
+
+ -- Simon Fels <simon.busch@canonical.com>  Tue, 10 Nov 2015 09:54:55 +0000
+
+telepathy-ofono (0.2+16.04.20151103-0ubuntu1) xenial; urgency=medium
+
+  [ Tiago Salem Herrmann ]
+  * Play ringtone on both speaker and wired headset. (LP: #1483888)
+
+ -- Bill Filler <ci-train-bot@canonical.com>  Tue, 03 Nov 2015 15:43:40 +0000
+
+telepathy-ofono (0.2+15.10.20151013-0ubuntu1) wily; urgency=medium
+
+  [ Tiago Salem Herrmann ]
+  * Force 1-1 chat if there is only one recipient. (LP: #1480815)
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Tue, 13 Oct 2015 20:35:39 +0000
+
+telepathy-ofono (0.2+15.10.20150819.1-0ubuntu1) wily; urgency=medium
+
+  [ Tiago Salem Herrmann ]
+  * Add addressing interface and set AddressingVCardField property to
+    "tel" (LP: #1485005)
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Wed, 19 Aug 2015 20:56:52 +0000
+
+telepathy-ofono (0.2+15.10.20150810-0ubuntu1) wily; urgency=medium
+
+  [ Tiago Salem Herrmann ]
+  * Use libphonenumber for phone number validation, normalization and
+    comparison. (LP: #1471545, #1444883, #1334860)
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Mon, 10 Aug 2015 21:06:40 +0000
+
+telepathy-ofono (0.2+15.10.20150803-0ubuntu1) wily; urgency=medium
+
+  [ Tiago Salem Herrmann ]
+  * Check and create PA context before using it. (LP: #1478999)
+  * Ensure uniqueName() is really unique. Using the object pointer is
+    error-prone. (LP: #1473761)
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Mon, 03 Aug 2015 13:33:32 +0000
+
+telepathy-ofono (0.2+15.10.20150721-0ubuntu2~gcc5.1) wily; urgency=medium
+
+  * No-change test rebuild for g++5 ABI transition
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Mon, 27 Jul 2015 19:15:14 +0000
+
+telepathy-ofono (0.2+15.10.20150721-0ubuntu1) wily; urgency=medium
+
+  [ Tiago Salem Herrmann ]
+  * Improve oFonoConnection cleanup Unregister object path/service from
+    dbus Delete instances dynamically created on destructor
+  * Move pulseaudio operations to a separate thread.
+  * Return true if all properties were correctly set.
+  * Unmute before setting the state as CallEnded, otherwise the request
+    is ignored. (LP: #1474511)
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Tue, 21 Jul 2015 13:51:54 +0000
+
+telepathy-ofono (0.2+15.10.20150709-0ubuntu1) wily; urgency=medium
+
+  [ Gustavo Pichorim Boiko ]
+  * Sync the fix that was applied on OTA5: [ Gustavo Pichorim Boiko ]
+    Set the status to accepted once a call is accepted.
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Thu, 09 Jul 2015 13:45:39 +0000
+
+telepathy-ofono (0.2+15.10.20150701-0ubuntu1) wily; urgency=medium
+
+  [ Tiago Salem Herrmann ]
+  * Check for mms group chats Set initiatorHandle correctly Improve
+    checks for conference channels
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Wed, 01 Jul 2015 14:16:19 +0000
+
+telepathy-ofono (0.2+15.10.20150617-0ubuntu1) wily; urgency=medium
+
+  [ CI Train Bot ]
+  * New rebuild forced.
+
+  [ Tiago Salem Herrmann ]
+  * Improve phone number normalization. (LP: #1462090)
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Wed, 17 Jun 2015 20:39:13 +0000
+
+telepathy-ofono (0.2+15.10.20150603-0ubuntu1) wily; urgency=medium
+
+  [ CI Train Bot ]
+  * New rebuild forced.
+
+  [ Tiago Salem Herrmann ]
+  * Set account display name in gsettings if empty. (LP: #1460111)
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Wed, 03 Jun 2015 19:28:00 +0000
+
+telepathy-ofono (0.2+15.04.20150521.1-0ubuntu1) vivid; urgency=medium
+
+  [ Tiago Salem Herrmann ]
+  * Check if members match before returning the channel.
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Thu, 21 May 2015 19:37:30 +0000
+
+telepathy-ofono (0.2+15.04.20150519.1-0ubuntu1) vivid; urgency=medium
+
+  [ CI Train Bot ]
+  * New rebuild forced.
+
+  [ Tiago Salem Herrmann ]
+  * Add mc-plugin to provision ril modem accounts. (LP: #1442962)
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Tue, 19 May 2015 15:20:33 +0000
+
+telepathy-ofono (0.2+15.04.20150331-0ubuntu1) vivid; urgency=medium
+
+  [ Tiago Salem Herrmann ]
+  * Don't try to compare phone numbers, otherwise channels with wrong
+    handles can be mistakenly reused when not intended. (LP: #1372646)
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Tue, 31 Mar 2015 17:56:15 +0000
+
+telepathy-ofono (0.2+15.04.20150220-0ubuntu1) vivid; urgency=medium
+
+  [ You-Sheng Yang ]
+  * Add --parallel to dh so that one may kick off parallel build with
+    `DEB_BUILD_OPTIONS=parallel=16 ./debian/rules binary`.
+  * DEB_HOST_GNU_TYPE and other variables may not be set when not using
+    tools like dpkg-buildpackage. Include
+    /usr/share/dpkg/architecture.mk as recommended in
+    https://wiki.debian.org/CrossBuildPackagingGuidelines .
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Fri, 20 Feb 2015 20:27:41 +0000
+
+telepathy-ofono (0.2+15.04.20150217-0ubuntu1) vivid; urgency=medium
+
+  [ Tiago Salem Herrmann ]
+  * Retry when hangup() or answer() fail. (LP: #1422401)
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Tue, 17 Feb 2015 17:23:42 +0000
+
+telepathy-ofono (0.2+15.04.20150204-0ubuntu1) vivid; urgency=medium
+
+  [ Tiago Salem Herrmann ]
+  * Add initial MMS group chat support. (LP: #1415458)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 04 Feb 2015 21:09:22 +0000
+
+telepathy-ofono (0.2+15.04.20150126-0ubuntu1) vivid; urgency=low
+
+  [ Tiago Salem Herrmann ]
+  * Watch for swapCallsComplete(bool) and set HoldState and
+    HoldStateReason accordingly. (LP: #1410365)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 26 Jan 2015 18:53:41 +0000
+
+telepathy-ofono (0.2+15.04.20150121-0ubuntu1) vivid; urgency=low
+
+  [ Tiago Salem Herrmann ]
+  * Add "fakeEmergencyNumber" property for testing.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 21 Jan 2015 18:01:47 +0000
+
+telepathy-ofono (0.2+15.04.20141216-0ubuntu1) vivid; urgency=low
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+  [ Tiago Salem Herrmann ]
+  * Power the screen on before disabling the proximity sensor. (LP:
+    #1398525)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 16 Dec 2014 02:31:39 +0000
+
+telepathy-ofono (0.2+15.04.20141210-0ubuntu1) vivid; urgency=low
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+  [ Tiago Salem Herrmann ]
+  * Disable proximity sensor also when using a wired headset. (LP:
+    #1398525)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 10 Dec 2014 18:05:47 +0000
+
+telepathy-ofono (0.2+15.04.20141112-0ubuntu1) vivid; urgency=low
+
+  [ Bill Filler ]
+  * Wait 2 seconds before calling enable_normal() so the beeps emitted
+    after a call is terminated are played using the right audio output
+    device. (LP: #1392082)
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+  [ Tiago Salem Herrmann ]
+  * Wait 2 seconds before calling enable_normal() so the beeps emitted
+    after a call is terminated are played using the right audio output
+    device. (LP: #1392082)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 12 Nov 2014 22:39:31 +0000
+
+telepathy-ofono (0.2+14.10.20141015-0ubuntu1) 14.09; urgency=low
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+  [ Tiago Salem Herrmann ]
+  * Check if the SimManager interface is available and property not
+    empty before assuming the sim is locked. (LP: #1379836)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 15 Oct 2014 13:33:36 +0000
+
+telepathy-ofono (0.2+14.10.20141008-0ubuntu1) utopic; urgency=low
+
+  [ Tiago Salem Herrmann ]
+  * Report away status when sim is locked.
+  * refresh emergency numbers when appropriate
+  * Use local timestamp instead of the one provided by the carrier. (LP:
+    #1246198)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 07 Oct 2014 19:16:08 +0000
+
+telepathy-ofono (0.2+14.10.20141007-0ubuntu1) utopic; urgency=low
+
+  [ Andreas Pokorny ]
+  * Request proximity based screen blanking from powerd
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 07 Oct 2014 19:13:15 +0000
+
+telepathy-ofono (0.2+14.10.20141006-0ubuntu1) utopic; urgency=low
+
+  [ Ricardo Salveti de Araujo ]
+  * qpulse: don't try to autostart pulse when creating context (LP:
+    #1375249)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 06 Oct 2014 18:52:57 +0000
+
+telepathy-ofono (0.2+14.10.20140923-0ubuntu1) utopic; urgency=low
+
+  [ Ricardo Salveti de Araujo ]
+  * qpulseaudioengine: don't need to set initial volume anymore, handled
+    by the indicator and pulse
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 23 Sep 2014 06:14:04 +0000
+
+telepathy-ofono (0.2+14.10.20140918.1-0ubuntu1) utopic; urgency=low
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+  [ Tiago Salem Herrmann ]
+  * Do not process ofono dtmf dbus response if the channel is not
+    active. (LP: #1370106)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 18 Sep 2014 13:31:16 +0000
+
+telepathy-ofono (0.2+14.10.20140910-0ubuntu1) utopic; urgency=low
+
+  [ Tiago Salem Herrmann ]
+  * Set modem serial when it changes (LP: #1367749)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 10 Sep 2014 19:46:07 +0000
+
+telepathy-ofono (0.2+14.10.20140826.1-0ubuntu1) utopic; urgency=low
+
+  [ Ricardo Salveti de Araujo ]
+  * Improve event handling from pulse, also exporting mode changes.
+
+  [ Tiago Salem Herrmann ]
+  * Improve event handling from pulse, also exporting mode changes.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 26 Aug 2014 22:49:51 +0000
+
+telepathy-ofono (0.2+14.10.20140822-0ubuntu1) utopic; urgency=low
+
+  [ Tiago Salem Herrmann ]
+  * Report "away" status if there is no network and "offline" if the sim
+    card is not present. Remove legacy code. Expose operator name to
+    apps via presence message. .
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 22 Aug 2014 13:28:26 +0000
+
+telepathy-ofono (0.2+14.10.20140819.3-0ubuntu1) utopic; urgency=low
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+  [ Ricardo Salveti de Araujo ]
+  * qpulseaudioengine: set default voicecall volume
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 19 Aug 2014 07:01:59 +0000
+
+telepathy-ofono (0.2+14.10.20140814-0ubuntu1) utopic; urgency=low
+
+  [ Tiago Salem Herrmann ]
+  * Check if the mms service matches the modem object path. (LP:
+    #1356180)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 14 Aug 2014 20:18:43 +0000
+
+telepathy-ofono (0.2+14.10.20140807-0ubuntu1) utopic; urgency=low
+
+  [ Tiago Salem Herrmann ]
+  * Check if the returned value is valid to avoid crashes. (LP:
+    #1351367)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 07 Aug 2014 18:42:38 +0000
+
+telepathy-ofono (0.2+14.10.20140804.1-0ubuntu1) utopic; urgency=low
+
+  [ Ricardo Salveti de Araujo ]
+  * Adding support for handsfree/headset (bluetooth).
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 04 Aug 2014 15:49:02 +0000
+
+telepathy-ofono (0.2+14.10.20140725.2-0ubuntu1) utopic; urgency=low
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+  [ Tiago Salem Herrmann ]
+  * Add VoicemailNumberChanged() signal (LP: #1347085)
+  * Fix PropertyChanged signal connection. Improve delivery report (LP:
+    #1337597)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 25 Jul 2014 21:29:36 +0000
+
+telepathy-ofono (0.2+14.10.20140701-0ubuntu1) utopic; urgency=low
+
+  [ Gustavo Pichorim Boiko ]
+  * Expose the emergency numbers via DBus so that clients can query it.
+
+  [ Tiago Salem Herrmann ]
+  * Ignore received timestamp and use system date/time instead (LP:
+    #1331570)
+  * Implement MMS sending support.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 01 Jul 2014 16:16:18 +0000
+
+telepathy-ofono (0.2+14.10.20140623-0ubuntu3) utopic; urgency=medium
+
+  * Enabling routing settings to use the pulse-droid element again
+
+ -- Ricardo Salveti de Araujo <ricardo.salveti@canonical.com>  Wed, 25 Jun 2014 14:53:36 -0300
+
+telepathy-ofono (0.2+14.10.20140623-0ubuntu2) utopic; urgency=medium
+
+  * Temporarily restoring routes settings to use Alsa devices
+
+ -- Ricardo Salveti de Araujo <ricardo.salveti@canonical.com>  Wed, 25 Jun 2014 02:23:08 -0300
+
+telepathy-ofono (0.2+14.10.20140623-0ubuntu1) utopic; urgency=low
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+  [ Ricardo Salveti de Araujo ]
+  * Porting pulseaudio logic to use the pulse-droid element (Android
+    Audio HAL)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 23 Jun 2014 03:07:44 +0000
+
+telepathy-ofono (0.2+14.10.20140603-0ubuntu1) utopic; urgency=low
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+  [ Tiago Salem Herrmann ]
+  * Add modem-objpath as a protocol parameter.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 03 Jun 2014 17:19:36 +0000
+
+telepathy-ofono (0.2+14.10.20140526-0ubuntu1) utopic; urgency=low
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+  [ Tiago Salem Herrmann ]
+  * Use DisconnectReason() from ofono to decide if the call was missed
+    (LP: #1317685)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 26 May 2014 15:24:16 +0000
+
+telepathy-ofono (0.2+14.10.20140512-0ubuntu1) utopic; urgency=low
+
+  [ Tiago Salem Herrmann ]
+  * Do not set the modem online
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 12 May 2014 16:10:16 +0000
+
+telepathy-ofono (0.2+14.04.20140407-0ubuntu1) trusty; urgency=low
+
+  [ CI bot ]
+  * Add initial USSD support (LP: #1195398)
+
+  [ Tiago Salem Herrmann ]
+  * Add class 0 SMS support
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 07 Apr 2014 22:59:17 +0000
+
+telepathy-ofono (0.2+14.04.20140319-0ubuntu1) trusty; urgency=low
+
+  [ Tiago Salem Herrmann ]
+  * Add support for conference calls. .
+  * Add support for multiple modems.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 19 Mar 2014 02:36:43 +0000
+
+telepathy-ofono (0.2+14.04.20140307-0ubuntu1) trusty; urgency=low
+
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 07 Mar 2014 10:44:28 +0000
+
+telepathy-ofono (0.2+14.04.20140228-0ubuntu1) trusty; urgency=low
+
+  [ Tiago Salem Herrmann ]
+  * Update audio route asynchronously when enabling/disabling speaker
+    mode. (LP: #1277765)
+  * Mark messages as failed when recipients are invalid or when no
+    messages to a group chat could be sent. (LP: #1277761)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 28 Feb 2014 14:51:17 +0000
+
+telepathy-ofono (0.2+14.04.20140217-0ubuntu1) trusty; urgency=low
+
+  [ Tiago Salem Herrmann ]
+  * Implement multi recipient sms support.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 17 Feb 2014 13:37:36 +0000
+
+telepathy-ofono (0.2+14.04.20140130-0ubuntu1) trusty; urgency=low
+
+  [ Tiago Salem Herrmann ]
+  * set Tp::CallStateChangeReasonNoAnswer also for waiting calls.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 30 Jan 2014 17:01:56 +0000
+
+telepathy-ofono (0.2+14.04.20140117-0ubuntu1) trusty; urgency=low
+
+  [ Tiago Salem Herrmann ]
+  * Check if the previous sendTones() succeeded before sending more
+    tones. (LP: #1268648)
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 59
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 17 Jan 2014 01:01:57 +0000
+
+telepathy-ofono (0.2+14.04.20140110-0ubuntu1) trusty; urgency=low
+
+  [ Tiago Salem Herrmann ]
+  * Add delivery report support.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 57
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 10 Jan 2014 01:01:29 +0000
+
+telepathy-ofono (0.2+14.04.20131211-0ubuntu1) trusty; urgency=low
+
+  [ Gustavo Pichorim Boiko ]
+  * Add ofono-qt mock interface to be used on tests. Add tests for
+    incoming/outgoing calls, Hold, Mute and DTMF.
+
+  [ Tiago Salem Herrmann ]
+  * Add ofono-qt mock interface to be used on tests. Add tests for
+    incoming/outgoing calls, Hold, Mute and DTMF.
+  * Add support for private and unknown phone numbers.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 55
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 11 Dec 2013 01:01:18 +0000
+
+telepathy-ofono (0.2+14.04.20131205.1-0ubuntu1) trusty; urgency=low
+
+  [ Tiago Salem Herrmann ]
+  * Accept non numeric id's. (LP: #1238939)
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 52
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 05 Dec 2013 02:02:57 +0000
+
+telepathy-ofono (0.2+13.10.20131015.5-0ubuntu1) saucy; urgency=low
+
+  [ Tiago Salem Herrmann ]
+  * During disconnection we have to unmute pulseaudio, otherwise the
+    next call will start muted.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 50
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 15 Oct 2013 19:01:07 +0000
+
+telepathy-ofono (0.2+13.10.20131013-0ubuntu1) saucy; urgency=low
+
+  [ Tiago Salem Herrmann ]
+  * telepathy-ofono does not need to ask ofono to register into the
+    network. (LP: #1226145)
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 48
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Sun, 13 Oct 2013 01:01:14 +0000
+
+telepathy-ofono (0.2+13.10.20131008.2-0ubuntu1) saucy; urgency=low
+
+  [ David Henningsson ]
+  * Ensure speakermode status is correct even after plug/unplug of
+    headphones.
+  * Fix bug causing occasional hangs - Minor refactoring - Add mic mute
+    functionality
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 46
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 08 Oct 2013 10:03:24 +0000
+
+telepathy-ofono (0.2+13.10.20130925.1-0ubuntu1) saucy; urgency=low
+
+  [ Tiago Salem Herrmann ]
+  * Avoid changing to the wrong audio route on "disconnect".
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 43
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 25 Sep 2013 10:03:24 +0000
+
+telepathy-ofono (0.2+13.10.20130827-0ubuntu1) saucy; urgency=low
+
+  [ David Henningsson ]
+  * Use the PulseAudio backend instead of the AudioFlinger backend.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 41
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 27 Aug 2013 10:03:56 +0000
+
+telepathy-ofono (0.2+13.10.20130826-0ubuntu1) saucy; urgency=low
+
+  [ David Henningsson ]
+  * Add PulseAudio interface.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 39
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 26 Aug 2013 22:04:01 +0000
+
+telepathy-ofono (0.2+13.10.20130821-0ubuntu1) saucy; urgency=low
+
+  [ Tiago Salem Herrmann ]
+  * Add initial mmsd support.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 37
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 21 Aug 2013 01:01:51 +0000
+
+telepathy-ofono (0.2+13.10.20130809-0ubuntu1) saucy; urgency=low
+
+  * Automatic snapshot from revision 35
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 09 Aug 2013 01:01:54 +0000
+
+telepathy-ofono (0.2daily13.06.14.1-0ubuntu1) saucy; urgency=low
+
+  [ Łukasz 'sil2100' Zemczak ]
+  * Version bump to force the package rebuild
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 33
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 14 Jun 2013 09:52:00 +0000
+
+telepathy-ofono (0.2daily13.06.14-0ubuntu1) saucy; urgency=low
+
+  [ Łukasz 'sil2100' Zemczak ]
+  * Initial release after the name switch to telepathy-ofono
+  * debian/rules, debian/control:
+    - Modifications related to compliance with our packaging standards
+  * Automatic snapshot from revision 25 (bootstrap)
+
+  [ Didier Roche ]
+  * Fix copyright and license
+  * Fix name of the project in the copyright file
+  * Fix archs on which it's going to be built
+
+  [ Ricardo Salveti de Araujo ]
+  * debian/control: there's no 0.9.3.3 in the archive, that was internal
+    only .
+
+  [ Didier Roche ]
+  * reference actually the launchpad project page in debian/copyright
+  * push back arch: any
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 31
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 14 Jun 2013 01:01:48 +0000
