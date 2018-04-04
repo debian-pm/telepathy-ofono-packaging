@@ -39,7 +39,7 @@ Architecture: amd64 i386 armhf arm64
 Depends: telepathy-ofono,
          ${misc:Depends},
          ${shlibs:Depends},
-         libhybris-utils
+Suggests: libhybris-utils
 Description: telepathy oFono mission control plugin for ril modems
  This telepathy mission-control plugin is used to automatically provision
  telepathy-ofono accounts for each available ril modem.
